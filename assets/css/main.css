@@ -1,0 +1,17 @@
+.cntmin{
+	background: #a79292;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+	display:table;
+}
+.minas{
+	
+}
+.table{
+	width: 500px;
+	height: 500px;
+	border: 1px solid #000;
+	display: table-cell;
+	vertical-align: middle;
+}
