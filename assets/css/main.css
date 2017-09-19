@@ -1,32 +1,33 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-  background-color: #130115;
-  margin: 150px;
+  background-color: ;
+  margin: 50px;
 }
 table{
-  background-color: #ff83de;
-
+  background-color: #000;
+  margin-bottom: 50px;
 }
 td{
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 input{
-  background-color: #b5bebf;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
+  position: relative;
 }
-.texto{
-  background: white;
-  font-size: 20px;
+
+h1{
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 .reiniciar{
   font-size: 20px;
 
 }
-.num1{
-  font-size: 20px;
-}
 
-.num2 img{
-  font-size: 5%;
-}

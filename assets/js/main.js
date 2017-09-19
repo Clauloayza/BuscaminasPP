@@ -1,12 +1,13 @@
 var vacios= [];
 var vaciosLength = document.getElementsByClassName('vacio').length;
-var tabla = document.getElementById('tabla');
 var num1 = [];
 var num1Length = document.getElementsByClassName('num1').length;
 var num2 = [];
 var num2Length = document.getElementsByClassName('num2').length;
 var num3 = [];
 var num3Length = document.getElementsByClassName('num3').length;
+
+var tabla = document.getElementById('tabla');
 
 function noClick(){
   event.stopPropagation();
@@ -20,8 +21,7 @@ for(var i = 0; i< vaciosLength; i++){
   vacios[i].addEventListener("click",espacioVacio);
 }
 function espacioVacio(){
-
-    this.style.backgroundColor="white";
+	this.style.backgroundImage="url('assets/imgs/vacio.png')";
 }
 
   var bomba = document.getElementsByClassName('bomba');
@@ -32,11 +32,11 @@ function espacioVacio(){
 
     for(var i = 0; i< bomba.length; i++){
       console.log(i);
-      bomba[i].setAttribute("value","💣");
-      bomba[i].style.backgroundColor="red";
+      bomba[i].setAttribute("src","../imgs/buscaminas.png");
+      bomba[i].style.backgroundColor="#000";
 
     }
-    setTimeout(function(){alert("Perdiste");},500);
+    setTimeout(function(){swal ( "Siempre pierdes" ,  "Vuelve a intentar!" ,  "error" );},500);
     deshabilitar();
   }
 
@@ -48,9 +48,10 @@ function espacioVacio(){
   }
 
   document.addEventListener('click', continuar);
-  function continuar(){
-    alert('Sigue jugango');
-
+  function continuar(){alert({
+  title: "No salgas del Tablero!",
+});
+  
   }
 
   for(var i = 0; i< num3Length; i++){
