@@ -5,6 +5,8 @@ var num1 = [];
 var num1Length = document.getElementsByClassName('num1').length;
 var num2 = [];
 var num2Length = document.getElementsByClassName('num2').length;
+var num3 = [];
+var num3Length = document.getElementsByClassName('num3').length;
 
 function noClick(){
   event.stopPropagation();
@@ -34,7 +36,7 @@ function espacioVacio(){
       bomba[i].style.backgroundColor="red";
 
     }
-    setTimeout(function(){alert("Fin del juego");},500);
+    setTimeout(function(){alert("Perdiste");},500);
     deshabilitar();
   }
 
@@ -51,6 +53,16 @@ function espacioVacio(){
 
   }
 
+  for(var i = 0; i< num3Length; i++){
+    num3[i]= document.getElementsByClassName('num3')[i];
+  }
+  for(var i = 0; i< num3Length; i++){
+    num3[i].addEventListener("click",numero3);
+  }
+  function numero3(){
+    this.setAttribute("value", "3");
+
+  }
   for(var i = 0; i< num2Length; i++){
     num2[i]= document.getElementsByClassName('num2')[i];
   }
