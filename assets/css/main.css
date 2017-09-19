@@ -1,17 +1,32 @@
-.cntmin{
-	background: #a79292;
-	width: 100%;
-	height: auto;
-	padding: 50px;
-	display:table;
+body{
+  background-color: #130115;
+  margin: 150px;
 }
-.minas{
-	
+table{
+  background-color: #ff83de;
+
 }
-.table{
-	width: 500px;
-	height: 500px;
-	border: 1px solid #000;
-	display: table-cell;
-	vertical-align: middle;
+td{
+  width: 100px;
+  height: 100px;
+}
+input{
+  background-color: #b5bebf;
+  width: 100px;
+  height: 100px;
+}
+.texto{
+  background: white;
+  font-size: 20px;
+}
+.reiniciar{
+  font-size: 20px;
+
+}
+.num1{
+  font-size: 20px;
+}
+
+.num2 img{
+  font-size: 5%;
 }
